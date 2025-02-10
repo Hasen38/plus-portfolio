@@ -5,7 +5,6 @@ import Blog3 from "../assets/blog3.png";
 
 import {
   FaGithub,
-  FaExternalLinkAlt,
   FaReact,
   FaLaravel,
   FaStripe,
