@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 
-import Projects from "./components/projects";
+import Projects from "./components/Projects";
 
 import Hitup from "./components/Hitup";
 function App() {
