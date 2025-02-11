@@ -3,10 +3,9 @@ import React, { useState, useEffect } from "react";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768); // Changed to md breakpoint
+      setIsMobile(window.innerWidth <= 640); // Changed to sm breakpoint for extra small screens
     };
     checkScreenSize();
     window.addEventListener('resize', checkScreenSize);
