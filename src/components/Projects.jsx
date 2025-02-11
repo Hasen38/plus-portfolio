@@ -5,44 +5,37 @@ import Blog3 from "../assets/blog3.png";
 
 import {
   FaGithub,
-<<<<<<< HEAD
-  // FaExternalLinkAlt,
-=======
->>>>>>> 3329f0084a05aa4a52bf2115e51281e91121e232
   FaReact,
   FaLaravel,
   FaStripe,
 } from "react-icons/fa";
-import { SiTailwindcss, SiMysql, SiInertia, SiFilament } from "react-icons/si";
+import { SiTailwindcss, SiMysql,SiFilament } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const projects = [
     {
       title: "Ethio-travel",
-      image: Ethio, // Add your project image
+      image: Ethio,
       description:
         "A full-stack Travel platform with real-time inventory, payment processing, and user authentication.",
       longDescription:
-        "A travel platform that allows users to explore and book tours, view detailed destination information, and seamlessly plan their trips to Ethiopia.The site Features an intuitive interface for discovering packages and stripe payment payment processing with a focus on user experience and ease of navigation.",
-
+        "A travel platform that allows users to explore and book tours, view detailed destination information, and seamlessly plan their trips to Ethiopia. The site Features an intuitive interface for discovering packages and stripe payment processing with a focus on user experience and ease of navigation.",
       technologies: [
         { icon: <FaLaravel />, name: "Laravel" },
         { icon: <SiTailwindcss />, name: "Tailwind" },
         { icon: <SiMysql />, name: "MySQL" },
         { icon: <FaStripe />, name: "Stripe" },
       ],
-
-      github: "https://github.com/hasen38/ethio-travel",
-      // live: "https://your-ecommerce.com",
+      github: "https://github.com/hasen38/Ethio-travel",
     },
     {
-      title: "Pharmacy Inventory Management System",
-      image: Pharma, // Add your project image
+      title: "Pharmacy-manegment-system",
+      image: Pharma,
       description:
-        "Analytics dashboard for inventory management with real-time data visualization.",
-
+        "A comprehensive pharmacy management system built with Laravel and Filament.",
       longDescription:
-        "Features include real-time analytics, customizable widgets, data export capabilities, and integration with multiple social media platforms.",
+        "A robust pharmacy management system featuring inventory tracking, sales management, and reporting capabilities. Built with Laravel and Filament, it offers a seamless experience for pharmacy staff to manage their daily operations efficiently.",
       technologies: [
         { icon: <FaLaravel />, name: "Laravel" },
         { icon: <SiTailwindcss />, name: "Tailwind" },
@@ -50,107 +43,92 @@ const Projects = () => {
         { icon: <SiFilament />, name: "Filament" },
       ],
       github: "https://github.com/hasen38/Pharmacy-inventory-system",
-      // live: "https://your-dashboard.com",
     },
     {
       title: "Blog App",
-      image: Blog3, // Add your project image
+      image: Blog3,
       description:
-        "A platform for creating, managing, and publishing blog posts with a clean and intuitive interface.",
-
+        "A modern blog platform built with React and Laravel, featuring a rich text editor and real-time updates.",
       longDescription:
-        "An easy-to-use blog management system that allows users to write, edit, and organize blog posts, manage categories, and publish content seamlessly.",
-
+        "A feature-rich blogging platform that combines React's dynamic frontend with Laravel's powerful backend. Includes features like rich text editing, real-time comments, and social sharing capabilities.",
       technologies: [
-        { icon: <FaLaravel />, name: "Laravel" },
         { icon: <FaReact />, name: "React" },
-        // { icon: <SiInertia />, name: "" },
-        { icon: <SiTailwindcss />, name: "Tailwind" },
+        { icon: <FaLaravel />, name: "Laravel" },
         { icon: <SiMysql />, name: "MySQL" },
       ],
       github: "https://github.com/hasen38/Blog-app",
-      // live: "https://your-taskapp.com",
     },
   ];
 
   return (
-    <div
-      className="px-4 py-20 bg-gradient-to-b from-gray-900 to-gray-800"
-      id="projects"
-    >
-      <div className="max-w-3xl mx-auto">
-        {/* Header */}
-        <div className="mb-16 text-center">
-          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 md:text-5xl">
-            Recent Projects
+    <div className="py-16 sm:py-20 lg:py-24 bg-gray-50" id="projects">
+      <div className="container px-4 sm:px-6 lg:px-8 mx-auto max-w-4xl">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-12 sm:mb-16"
+        >
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Projects
           </h2>
-          <div className="w-24 h-1 mx-auto mt-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-600"></div>
-          <p className="max-w-2xl mx-auto mt-6 text-lg text-gray-300">
-            Explore my latest projects showcasing my skills in full-stack
-            development, responsive design, and modern web technologies.
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+            Here are some of my recent projects that showcase my skills and experience
           </p>
-        </div>
+        </motion.div>
 
-        {/* Projects Stack */}
-        <div className="flex flex-col gap-8">
+        <div className="space-y-12">
           {projects.map((project, index) => (
-            <div
-              key={index}
-              className="overflow-hidden transition-all duration-300 shadow-lg rounded-xl bg-gray-800/50 hover:shadow-2xl hover:-translate-y-2"
+            <motion.div
+              key={project.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              {/* Project Image */}
-              <div className="relative h-[250px] sm:h-[300px]">
+              <div className="relative overflow-hidden aspect-w-16 aspect-h-9">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="object-cover w-full h-full transition-transform duration-500 transform hover:scale-105"
+                  className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
               </div>
 
-              {/* Project Content */}
-              <div className="p-8">
-                <h3 className="mb-3 text-2xl font-bold text-white">
+              <div className="p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
                   {project.title}
                 </h3>
-                <p className="mb-6 text-gray-300">{project.longDescription}</p>
+                <p className="text-sm sm:text-base text-gray-600 mb-4">
+                  {project.description}
+                </p>
 
-                {/* Technologies */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech, techIndex) => (
+                <div className="flex flex-wrap gap-3 mb-6">
+                  {project.technologies.map((tech) => (
                     <div
-                      key={techIndex}
-                      className="flex items-center gap-2 px-4 py-2 text-gray-300 transition-colors rounded-full bg-gray-700/50 hover:bg-gray-700"
+                      key={tech.name}
+                      className="flex items-center gap-1 text-sm bg-gray-100 px-3 py-1 rounded-full"
                     >
-                      {tech.icon}
-                      <span>{tech.name}</span>
+                      <span className="text-gray-600">{tech.icon}</span>
+                      <span className="text-gray-700">{tech.name}</span>
                     </div>
                   ))}
                 </div>
 
-                {/* Links */}
-                <div className="flex gap-4">
+                <div className="flex justify-between items-center">
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-6 py-3 text-white transition-all bg-gray-700 rounded-full hover:bg-blue-600"
+                    className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold text-blue-600 hover:text-blue-700 transition-colors"
                   >
                     <FaGithub className="text-xl" />
-                    <span>View Code</span>
+                    View Code
                   </a>
-                  {/* <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-6 py-3 text-white transition-all bg-gray-700 rounded-full hover:bg-purple-600"
-                  > */}
-                    {/* <FaExternalLinkAlt className="text-xl" />
-                    <span>Live Demo</span>
-                  </a> */}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

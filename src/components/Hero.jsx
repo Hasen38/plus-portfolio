@@ -1,79 +1,45 @@
 import React from "react";
-import { motion } from "framer-motion"; // You'll need to install framer-motion
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen"id="home">
+    <div className="relative min-h-screen" id="home">
       {/* Enhanced gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-200 via-white to-purple-200 opacity-80"></div>
 
-      <div className="flex relative flex-col justify-center items-center px-4 py-20 min-h-screen">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mx-auto max-w-6xl"
-        >
-          <div className="flex flex-col items-center space-y-8 text-center">
+      <div className="relative flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 py-20 min-h-screen">
+        <div className="w-full max-w-6xl mx-auto">
+          <div className="flex flex-col items-center space-y-6 sm:space-y-8 text-center">
             {/* Decorative element */}
-            <div className="mb-6 w-20 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full"></div>
+            <div className="mb-4 sm:mb-6 w-16 sm:w-20 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full"></div>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="text-lg font-medium text-indigo-600"
-            >
+            <p className="text-base sm:text-lg font-medium text-indigo-600">
               Welcome to my portfolio
-            </motion.p>
+            </p>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="max-w-3xl text-5xl font-bold leading-tight text-gray-800"
-            >
-              Crafting Innovative Solutions{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">
-                with Elegant Code
-              </span>{" "}
-              🚀
-            </motion.p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
+              Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Hasen</span>
+            </h1>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
-              className="max-w-2xl text-xl text-gray-600"
-            >
-              Hi, I'm Hasen, a Full Stack Developer based in Asella, Ethiopia
-            </motion.p>
+            <p className="max-w-2xl text-sm sm:text-base md:text-lg text-gray-600">
+              A passionate Full Stack Developer crafting beautiful and functional web experiences
+            </p>
 
-            {/* Social links */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.9 }}
-              className="flex mb-8 space-x-6"
-            >
-             
-            </motion.div>
-
-            {/* Download CV Button */}
-            <motion.a
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.1 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="/path-to-your-cv.pdf"
-              download
-              className="px-8 py-4 font-semibold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl hover:opacity-90"
-            >
-              Download Resume
-            </motion.a>
+            <div className="flex flex-col sm:flex-row gap-4 mt-8">
+              {/* <a
+                href="#projects"
+                className="px-6 py-3 text-sm sm:text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-full hover:opacity-90 transition-opacity"
+              >
+                View My Work
+              </a> */}
+              <a
+                href="#contact"
+                className="px-6 py-3 text-sm sm:text-base font-semibold text-gray-700 border-2 border-gray-300 rounded-full hover:border-gray-400 transition-colors"
+              >
+                Download Resume
+              </a>
+            </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
