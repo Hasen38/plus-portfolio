@@ -3,7 +3,7 @@ import { motion } from "framer-motion"; // You'll need to install framer-motion
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen"id="home">
       {/* Enhanced gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-200 via-white to-purple-200 opacity-80"></div>
 

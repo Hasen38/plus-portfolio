@@ -63,7 +63,7 @@ function Hitup() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
         className="p-8 text-center bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-3xl border border-gray-100 shadow-xl md:p-10"
-      >
+        id="contact">
         <h2 className="mb-6 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 md:text-5xl">
           Let's Connect!
         </h2>

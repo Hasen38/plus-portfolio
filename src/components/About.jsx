@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function AboutMe() {
   return (
-    <div className="container px-4 py-20 mx-auto bg-gradient-to-b from-gray-50 to-white">
+    <div className="container px-4 py-20 mx-auto bg-gradient-to-b from-gray-50 to-white" id="about">
       <div className="max-w-6xl mx-auto">
         {/* About Me Section */}
         <div className="mb-24">

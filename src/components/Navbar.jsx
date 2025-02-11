@@ -14,10 +14,10 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden space-x-6 md:flex">
-            {["Home", "About ", "Projects", "Contact "].map((item) => (
+            {["Home", "About", "Projects", "Contact"].map((item) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase().replace(" ", "-")}`}
+                href={`#${item.toLowerCase()}`}
                 className="relative py-2 text-gray-300 transition-colors duration-300 hover:text-white group"
               >
                 {item}
@@ -62,7 +62,7 @@ const Navbar = () => {
           {["Home", "About", "Projects", "Contact"].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase().replace(" ", "-")}`}
+              href={`#${item.toLowerCase()}`}
               className="block px-4 py-2 text-gray-300 rounded-lg transition-colors duration-300 hover:text-white hover:bg-gray-700"
               onClick={() => setIsOpen(false)}
             >
