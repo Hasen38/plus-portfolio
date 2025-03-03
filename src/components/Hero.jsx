@@ -21,7 +21,8 @@ const Hero = () => {
             </h1>
 
             <p className="max-w-2xl text-sm sm:text-base md:text-lg text-gray-600">
-              A passionate Full Stack Developer crafting beautiful and functional web experiences
+              A passionate Full Stack Developer crafting beautiful and
+              functional web experiences
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -32,7 +33,7 @@ const Hero = () => {
                 View My Work
               </a> */}
               <a
-                href="https://drive.google.com/file/d/1N_vsk-PvaRsa_AKoMSKFSnrsMJFhn93H/view?usp=drivesdk"
+                href="https://drive.google.com/file/d/1S6GwOcBwTgMhHyRn7zO0nCiunZ2jp_wV/view?usp=drivesdk"
                 className="px-6 py-3 text-sm sm:text-base font-semibold text-gray-700 border-2 border-gray-300 rounded-full hover:border-gray-400 transition-colors"
               >
                 Download Resume

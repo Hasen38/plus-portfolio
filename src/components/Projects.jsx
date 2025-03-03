@@ -2,14 +2,10 @@ import React from "react";
 import Ethio from "../assets/Ethio-travel.png";
 import Pharma from "../assets/pharma1.png";
 import Blog3 from "../assets/blog3.png";
+import Expense1 from "../assets/expense1.png";
 
-import {
-  FaGithub,
-  FaReact,
-  FaLaravel,
-  FaStripe,
-} from "react-icons/fa";
-import { SiTailwindcss, SiMysql,SiFilament } from "react-icons/si";
+import { FaGithub, FaReact, FaLaravel, FaStripe } from "react-icons/fa";
+import { SiTailwindcss, SiMysql, SiFilament, SiLivewire } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -52,11 +48,28 @@ const Projects = () => {
       longDescription:
         "A feature-rich blogging platform that combines React's dynamic frontend with Laravel's powerful backend. Includes features like rich text editing, real-time comments, and social sharing capabilities.",
       technologies: [
+        { icon: <SiTailwindcss />, name: "Tailwindcss" },
         { icon: <FaReact />, name: "React" },
         { icon: <FaLaravel />, name: "Laravel" },
         { icon: <SiMysql />, name: "MySQL" },
       ],
       github: "https://github.com/hasen38/Blog-app",
+    },
+    {
+      title: "Expense Tracker",
+      image: Expense1,
+      description:
+        "A modern expense tracking platform with real-time moniyoring and insights",
+      longDescription:
+        "Expense Tracker is designed to assist you in meticulously monitoring your personal finances. Built with Laravel and Livewire, it empowers you to effortlessly record and oversee your expenses, classify them by account type (such as cash or bank), and generate insightful reports to gain valuable insights into your financial habits and trends. ",
+
+      technologies: [
+        { icon: <SiLivewire />, name: "Livewire" },
+        { icon: <SiTailwindcss />, name: "Tailwindcss" },
+        { icon: <FaLaravel />, name: "Laravel" },
+        { icon: <SiMysql />, name: "MySQL" },
+      ],
+      github: "https://github.com/hasen38/expense_tracker",
     },
   ];
 
@@ -74,7 +87,8 @@ const Projects = () => {
             Projects
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills and experience
+            Here are some of my recent projects that showcase my skills and
+            experience
           </p>
         </motion.div>
 
@@ -124,7 +138,6 @@ const Projects = () => {
                     className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold text-blue-600 hover:text-blue-700 transition-colors"
                   >
                     <FaGithub className="text-xl" />
-                    View Code
                   </a>
                 </div>
               </div>
