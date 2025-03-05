@@ -95,20 +95,20 @@ function AboutMe() {
                 role: "Full Stack Developer",
                 company: "Applause(Utest) Inc.",
                 period: "May 2023 - Nov 2023",
-                achievements: [
-                  "developed enterprise-level web applications using React and Laravel",
-                  "Improved application performance by 40% through optimization techniques",
-                ],
+                // achievements: [
+                //   "developed enterprise-level web applications using React and Laravel",
+                //   "Improved application performance by 40% through optimization techniques",
+                // ],
               },
               {
                 role: "Web Developer",
                 company: "Vintage Technologies",
                 period: "Dec 2023 - Feb 2025",
-                achievements: [
-                  "Developed responsive web applications for diverse client base",
-                  "Integrated multiple third-party APIs and payment gateways",
-                  "Implemented automated testing reducing bug reports by 30%",
-                ],
+                // achievements: [
+                //   "Developed responsive web applications for diverse client base",
+                //   "Integrated multiple third-party APIs and payment gateways",
+                //   "Implemented automated testing reducing bug reports by 30%",
+                // ],
               },
             ].map((experience, index) => (
               <div
