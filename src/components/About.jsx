@@ -49,7 +49,7 @@ function AboutMe() {
           <div className="space-y-8">
             {[
               {
-                degree: "Graduated in Bsc Computer Science",
+                degree: "Graduated with a BSc in Computer Science",
                 institution: "Madda Welabu University",
                 period: " Sep 2019 - April 2023",
                 details: [
