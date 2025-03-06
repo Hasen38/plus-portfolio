@@ -14,7 +14,7 @@ const Projects = () => {
       title: "Ethio-travel",
       image: Travel,
       description:
-        "A full-stack Travel platform with real-time inventory, payment processing, and user authentication.",
+        "A  Travel platform with real-time update, payment processing, and user authentication.",
       longDescription:
         "A travel platform that allows users to explore and book tours, view detailed destination information, and seamlessly plan their trips to Ethiopia. The site Features an intuitive interface for discovering packages and stripe payment processing with a focus on user experience and ease of navigation.",
       technologies: [
@@ -29,7 +29,7 @@ const Projects = () => {
       title: "Pharmacy-manegment-system",
       image: Pharma,
       description:
-        "A comprehensive pharmacy management system built with Laravel and Filament.",
+        "A comprehensive pharmacy management system.",
       longDescription:
         "A robust pharmacy management system featuring inventory tracking, sales management, and reporting capabilities. Built with Laravel and Filament, it offers a seamless experience for pharmacy staff to manage their daily operations efficiently.",
       technologies: [
@@ -44,7 +44,7 @@ const Projects = () => {
       title: "Blog App",
       image: Blog3,
       description:
-        "A modern blog platform built with React and Laravel, featuring a rich text editor and real-time updates.",
+        "A modern blog platform built with React and Laravel.",
       longDescription:
         "A feature-rich blogging platform that combines React's dynamic frontend with Laravel's powerful backend. Includes features like rich text editing, real-time comments, and social sharing capabilities.",
       technologies: [
@@ -59,7 +59,7 @@ const Projects = () => {
       title: "Expense Tracker",
       image: Expense1,
       description:
-        "A modern expense tracking platform with real-time moniyoring and insights",
+        "A modern expense tracking platform with real-time monitoring and insights",
       longDescription:
         "Expense Tracker is designed to assist you in meticulously monitoring your personal finances. Built with Laravel and Livewire, it empowers you to effortlessly record and oversee your expenses, classify them by account type (such as cash or bank), and generate insightful reports to gain valuable insights into your financial habits and trends. ",
 
