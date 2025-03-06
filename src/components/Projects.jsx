@@ -1,5 +1,5 @@
 import React from "react";
-import Ethio from "../assets/Ethio-travel.png";
+import Travel from "../assets/Travel.png";
 import Pharma from "../assets/pharma1.png";
 import Blog3 from "../assets/blog3.png";
 import Expense1 from "../assets/expense1.png";
@@ -12,7 +12,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Ethio-travel",
-      image: Ethio,
+      image: Travel,
       description:
         "A full-stack Travel platform with real-time inventory, payment processing, and user authentication.",
       longDescription:
