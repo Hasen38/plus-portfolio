@@ -75,67 +75,67 @@ function AboutMe() {
                   // </p>
                 // </div> */}
                 // {/* <ul className="list-disc list-inside space-y-2 text-gray-700"> */}
-{/*                 {education.details.map((detail, i) => ( */}
-{/*                   <li key={i}>{detail}</li> */}
-{/*                 ))} */}
-{/*                 </ul> */}
+                // {education.details.map((detail, i) => ( */}
+                   // <li key={i}>{detail}</li> */}
+       // ))}  
+                 // </ul> 
               // </div>
-            ))}
-{/*           </div> */}
-        // </div> */}
-{/*         <div className="mb-16">
-          <h3 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-8 text-center relative">
-            <span className="relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-2/3 after:h-1 after:bg-blue-500">
-              Work
-            </span>
-          </h3>
-          <div className="space-y-8">
-            {[
-              {
-                role: "Web Developer",
-                company: "Vintage Technologies",
-                period: "Dec 2023 - Feb 2025",
-                achievements: [
-                  // "Developed responsive web applications for diverse client base",
-                  // "Integrated multiple third-party APIs and payment gateways",
-                  // "Implemented automated testing reducing bug reports by 30%",
-                ],
-              },
-                    {
-                role: "Web Developer",
-                company: "Applause(Utest) Inc.",
-                period: "May 2023 - Nov 2023",
-                achievements: [
-                  // "developed enterprise-level web applications using React and Laravel",
-                  // "Improved application performance by 40% through optimization techniques",
-                ],
-              },
-            ].map((experience, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-800">
-                      {experience.role}
-                    </h4>
-                    <p className="text-blue-600">{experience.company}</p>
-                  </div>
-                  <p className="text-gray-600 mt-2 sm:mt-0">
-                    {experience.period}
-                  </p>
-                </div>
-                <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  {experience.achievements.map((achievement, i) => (
-                    <li key={i}>{achievement}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
- */}
+            // ))}
+           // </div> 
+       //  // </div> 
+       // <div className="mb-16">
+       //     <h3 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-8 text-center relative">
+       //       <span className="relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-2/3 after:h-1 after:bg-blue-500">
+       //         Work
+       //       </span>
+       //     </h3>
+       //     <div className="space-y-8">
+       //       {[
+       //         {
+       //           role: "Web Developer",
+       //           company: "Vintage Technologies",
+       //           period: "Dec 2023 - Feb 2025",
+       //           achievements: [
+       //             "Developed responsive web applications for diverse client base",
+       //             "Integrated multiple third-party APIs and payment gateways",
+       //             "Implemented automated testing reducing bug reports by 30%",
+       //           ],
+       //         },
+       //              {
+       //          role: "Web Developer",
+       //          company: "Applause(Utest) Inc.",
+       //          period: "May 2023 - Nov 2023",
+       //          achievements: [
+       //            // "developed enterprise-level web applications using React and Laravel",
+       //            // "Improved application performance by 40% through optimization techniques",
+       //          ],
+       //        },
+       //      ].map((experience, index) => (
+       //        <div
+       //          key={index}
+       //          className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+       //        >
+       //          <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+       //            <div>
+       //              <h4 className="text-xl font-bold text-gray-800">
+       //                {experience.role}
+       //              </h4>
+       //              <p className="text-blue-600">{experience.company}</p>
+       //            </div>
+       //            <p className="text-gray-600 mt-2 sm:mt-0">
+       //              {experience.period}
+       //            </p>
+       //          </div>
+       //          <ul className="list-disc list-inside space-y-2 text-gray-700">
+       //            {experience.achievements.map((achievement, i) => (
+       //              <li key={i}>{achievement}</li>
+       //            ))}
+       //          </ul>
+       //        </div>
+       //      ))}
+       //    </div>
+       //  </div>
+ 
         {/* Skills Section */}
         <div className="space-y-12 sm:space-y-16">
           <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center relative">
