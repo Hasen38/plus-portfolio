@@ -38,9 +38,8 @@ function AboutMe() {
             </div>
           </div>
         </div>
-
-        {/* Education Section */}
-        <div className="mb-16">
+        {/* Education S ection */}
+        {/* <div className="mb-16">
           <h3 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-8 text-center relative">
             <span className="relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-2/3 after:h-1 after:bg-blue-500">
               Education
@@ -75,15 +74,15 @@ function AboutMe() {
                   </p>
                 </div>
                 {/* <ul className="list-disc list-inside space-y-2 text-gray-700"> */}
-                {education.details.map((detail, i) => (
+        {/* {education.details.map((detail, i) => (
                   <li key={i}>{detail}</li>
                 ))}
                 {/* </ul> */}
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="mb-16">
+        {/* </div> */}
+        {/* ))} */}
+        {/* </div> */}
+        {/* </div> */}
+        {/* <div className="mb-16">
           <h3 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-8 text-center relative">
             <span className="relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-2/3 after:h-1 after:bg-blue-500">
               Work
@@ -133,9 +132,8 @@ function AboutMe() {
                 </ul>
               </div>
             ))}
-          </div>
-        </div>
-
+          </div> */}
+        {/* </div> */}
         {/* Skills Section */}
         <div className="space-y-12 sm:space-y-16">
           <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center relative">
@@ -196,7 +194,6 @@ function AboutMe() {
             ))}
           </div>
         </div>
-
         <div className="mt-16 space-y-8">
           <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 text-center">
             Services
