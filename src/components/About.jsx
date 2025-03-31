@@ -81,8 +81,8 @@ function AboutMe() {
                 {/* </ul> */}
               </div>
             ))}
-          </div>
-        </div> */}
+{/*           </div> */}
+        // </div> */}
 {/*         <div className="mb-16">
           <h3 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-8 text-center relative">
             <span className="relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-2/3 after:h-1 after:bg-blue-500">
