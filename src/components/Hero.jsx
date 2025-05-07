@@ -33,7 +33,7 @@ const Hero = () => {
                 View My Work
               </a> */}
               <a
-                href="https://drive.google.com/file/d/1Hyse_HhzuO7SBWcc8t7Yx49E3Gdwgvmt/view?usp=sharing"
+                href="https://drive.google.com/file/d/1MOl0uxlybd-ejo2wu8TK-IjXTADik47k/view?usp=drive_link"
                 className="px-6 py-3 text-sm sm:text-base font-semibold text-gray-700 border-2 border-gray-300 rounded-full hover:border-gray-400 transition-colors"
               >
                 Download Resume
