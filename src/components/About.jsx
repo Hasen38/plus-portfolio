@@ -50,7 +50,7 @@ function AboutMe() {
               {
                 degree: "Graduated with a BSc in Computer Science",
                 institution: "Madda Welabu University",
-                period: " Sep 2019 - April 2023",
+                // period: " Sep 2019 - April 2023",
                 details: [
                   // "Dean's List all semesters",
                   // "Senior Project: E-commerce Platform Development",
@@ -91,24 +91,27 @@ function AboutMe() {
           <div className="space-y-8">
             {[
               {
-                role: "Web Developer",
-                company: "Vintage Technologies",
-                period: "Dec 2023 - Feb 2025",
+                role: "Freelance Web Developer",
+                // company: "Vintage Technologies",
+                // period: "Dec 2023 - Feb 2025",
                 achievements: [
                   "Developed responsive web applications for diverse client base",
                   "Integrated multiple third-party APIs and payment gateways",
-                  "Implemented automated testing reducing bug reports by 30%",
+                  "Collaborated with designers to enhance user experience",
+                  // "Participated in Agile development processes, including sprint planning and retrospectives",
+                  // "Implemented CI/CD pipelines to streamline deployment processes",
                 ],
               },
-              {
-                role: "Web Developer",
-                company: "Applause (Utest) Inc.",
-                period: "May 2023 - Nov 2023",
-                achievements: [
-                  "Developed enterprise-level web applications using React and Laravel",
-                  "Improved application performance by 40% through optimization techniques",
-                ],
-              },
+              // {
+              //   role: "Web Developer",
+              //   company: "Applause (Utest) Inc.",
+              //   period: "May 2023 - Nov 2023",
+              //   achievements: [
+              //     "Developed enterprise-level web applications using React and Laravel",
+              //     "Improved application performance by 40% through optimization techniques",
+              //     "Implemented automated testing reducing bug reports by 30%",
+              //   ],
+              // },
             ].map((experience, index) => (
               <div
                 key={index}
